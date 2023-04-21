@@ -124,7 +124,7 @@ public class FamilyTree
 		while ((line = br.readLine()) != null)
 			addLine(line);
 		br.close();
-		fr.close();
+		fr.close();//close
 	}
 	
 	
