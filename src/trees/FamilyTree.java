@@ -139,9 +139,9 @@ public class FamilyTree
 		if (colonIndex < 0) {
 			throw new TreeException("There are no colons in this line");
 		}	//throw a TreeException with a useful message
-		String parent = line.substring(0,colonIndex); //The substring of line that starts at char #0 and ends just before colonIndex. Check the API for 
+		String parent = line.substring(0, colonIndex); //The substring of line that starts at char #0 and ends just before colonIndex. Check the API for 
 				           //class java.util.String, method substring(), if you need guidance.
-		String childrenString = line.substring(colonIndex+1); //The substring of line that starts just after colonIndex and goes through the end of
+		String childrenString = line.substring(colonIndex + 1); //The substring of line that starts just after colonIndex and goes through the end of
 				                   //the line. You'll use a different version of substring().
 		String[] childrenArray = childrenString.split(","); //Call childrenString.split(). Check the API for details. The result will be an array
 				                    //of strings, with the separating commas thrown away.
@@ -194,7 +194,7 @@ public class FamilyTree
 		
 		// Check members of ancestorsOf1 in order until you find a node that is also
 		// an ancestor of 2. 
-		for (TreeNode n1: ancestorsOf1)
+		for (TreeNode n1: ancestorsOf1) 
 			if (ancestorsOf2.contains(n1))
 				return n1;
 		
